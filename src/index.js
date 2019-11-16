@@ -4,7 +4,7 @@ import ClickityClick from './components/ClickityClick'
 
 ReactDOM.render(
   <div>
-    <ClickityClick />
+    <ClickityClick message="It's ON" />
   </div>,
   document.getElementById('root')
 );

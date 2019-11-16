@@ -1,14 +1,10 @@
 import React from 'react';
 
 class LightSwitch extends React.Component {
-    constructor() {
-        super();
-
-        // Initial state is defined
-        this.state = {
-            toggled: false
-        };
-    }
+    // Initial state is defined
+    state = {
+        toggled: false
+    };
 
     // when handleClick is called, setState will update the state so that toggle is reversed
     handleClick = () => {
@@ -22,7 +18,7 @@ class LightSwitch extends React.Component {
     render() {
         return (
             <div>
-                <button onClick={this.handleClick}>{this.state.toggled ? "ON" : "OFF"}</button>
+                <button onClick={this.handleClick}>{this.state.toggled ? this.props.message : "OFF"}</button>
             </div>
         );
     }
